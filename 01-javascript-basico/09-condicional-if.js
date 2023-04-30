@@ -1,4 +1,4 @@
-// Las condicionales son reglas para poder cmprobar si algo es verdadero o falso
+// Las condicionales son reglas para poder comprobar si algo es verdadero o falso
 
 if (true) {
     console.log("Hola");

@@ -1,4 +1,4 @@
-// Las funciones son un conjunto de sentencias para generar ciertas acciones que guardamos en los valores que guardamos en las variables.
+// Las funciones son un conjunto de sentencias para generar ciertas acciones con los valores que guardamos en las variables.
 
 // Declarativas
 function miFuncion() {
