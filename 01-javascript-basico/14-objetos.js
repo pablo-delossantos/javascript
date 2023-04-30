@@ -1,4 +1,4 @@
-// Objetos. javaScript es nu lenguaje diseñado en base a un paradigma de objetos.
+// Objetos. javaScript es un lenguaje diseñado en base a un paradigma de objetos.
 var miAuto = {
     marca: "Toyota",
     modelo: "Corolla",

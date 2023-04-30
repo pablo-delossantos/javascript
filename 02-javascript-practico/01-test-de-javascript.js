@@ -110,3 +110,115 @@ if (tipoDeSuscripcion === "Free") {
 } else {
     console.log("No tienes ninguna suscripcion");
 }
+
+var tipoDeSuscripcion = "Basic";
+
+if (tipoDeSuscripcion === "Free") {
+    console.log("Solo puedes tomar los cursos gratis");
+}
+
+if (tipoDeSuscripcion === "Basic") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un mes");
+}
+
+if (tipoDeSuscripcion === "Expert") {
+    console.log("Puedes tomar casi todos los cursos de Platzi durante un año");
+}
+
+if (tipoDeSuscripcion === "ExpertPlus") {
+    console.log(
+        "Tú y alguien más pueden tomar TODOS los cursos de Platzi durante un año"
+    );
+}
+
+//=======
+// ¿Qué es un ciclo?
+// Los ciclos son una forma de hacer que una tarea que pueda repetirse sin hacerlo de manualmente.
+
+// ¿Qué tipos de ciclos existen en JavaScript?
+// Ciclo For, ciclo While, Do While.
+
+// Un ciclo infinito es un ciclo que nunca se detiene. Trae el problema de saturar la memoria.
+
+// Se pueden mezclar ciclos y condicionales.
+
+//=======
+// Replica el comportamiento de los siguientes ciclos for utilizando ciclos while:
+
+for (let i = 0; i < 5; i++) {
+    console.log("El valor de i es: " + i);
+}
+
+for (let i = 10; i >= 2; i--) {
+    console.log("El valor de i es: " + i);
+}
+
+let i = 0;
+while (i < 5) {
+    console.log("El valor de i es: " + i);
+    i++;
+}
+
+// let i = 10;
+// while (i >= 2) {
+//     console.log("El valor de i es: " + i);
+//     i--;
+// }
+
+// Escribe un código en JavaScript que le pregunte a los usuarios cuánto es 2 + 2. Si responden bien, mostramos un mensaje de felicitaciones, pero si responden mal, volvemos a empezar.
+
+let respuesta = prompt("¿Cuánto es 2 + 2?");
+
+while (respuesta != "4") {
+    respuesta = prompt("Incorrecto. ¿Cuánto es 2 + 2?");
+}
+
+alert("¡Correcto! ¡Bien hecho!");
+
+//=========
+//¿Qué es un array?
+// Un array es una estructura de datos tipo objeto. Es un valor que va a guardar mas valores adentro (numeros, strings, objetos, otros arrays).
+
+//¿Qué es un objeto?
+// Las propiedades de un objeto estan compuestas por una clave-valor. En el caso de que la propiedad sea una función, la llamaremos método. Un objeto es un conjuto de estas propiedades.
+
+//¿Cuándo es mejor usar objetos o arrays?
+// Cuando las propiedades son de distinto tipo, usamos objetos.
+
+//¿Puedo mezclar arrays con objetos o incluso objetos con arrays?
+//Sí, en JavaScript puedes mezclar arrays con objetos o incluso objetos con arrays. Esto se debe a que JavaScript es un lenguaje de programación flexible y dinámico que no impone restricciones estrictas en la estructura de datos.
+// Por ejemplo, puedes tener un objeto que contenga una propiedad que sea un array, o un array que contenga objetos como elementos.
+
+//Crea una función que pueda recibir cualquier array como parámetro e imprima su primer elemento.
+
+function imprimirElementos(array) {
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i]);
+    }
+}
+let miArray = [1, 2, 3, 4, 5];
+imprimirElementos(miArray);
+
+//Crea una función que pueda recibir cualquier array como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el array completo).
+function imprimirElementos(array) {
+    array.forEach((elemento) => {
+        console.log(elemento);
+    });
+}
+const miNuevoArray = [1, 2, 3];
+imprimirElementos(miNuevoArray);
+
+//Crea una función que pueda recibir cualquier objeto como parámetro e imprima todos sus elementos uno por uno (no se vale imprimir el objeto completo).
+
+function imprimirPropiedades(objeto) {
+    for (let propiedad in objeto) {
+        console.log(`${propiedad}: ${objeto[propiedad]}`);
+    }
+}
+const miObjeto = {
+    nombre: "Pablo",
+    edad: 44,
+    profesion: "Maquetador Web",
+};
+
+imprimirPropiedades(miObjeto);
