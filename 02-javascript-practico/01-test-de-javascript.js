@@ -19,13 +19,13 @@ var edad = 44;
 //=======
 
 // ¿Cuál es la diferencia entre sumar números y concatenar strings?
-// Sumar es una operación matemática que se utiliza con numeros. Cuando sumamos numeros usamos el operador de suma (+)
+// Sumar es una operación matemática que se utiliza con números. Cuando sumamos numeros usamos el operador de suma (+)
 4 + 5;
 
-// l mismo operador se usa para concatenar strings
+// El mismo operador se usa para concatenar strings
 
-var nombre = "Pablo";
-var apellido = " de los Santos";
+var nombre = "Pablo ";
+var apellido = "de los Santos";
 nombre + apellido; //Pablo de los Santos
 
 //=======
@@ -40,14 +40,14 @@ nombre + apellido; //Pablo de los Santos
 // dineroAhorrado = number;
 // deudas = number;
 
-var nombre = "Pablo";
-var apellido = "de los Santos";
-var perfil = "pablo-delossantos";
-var edad = 44;
-var email = "pdelossantos@nosis.com";
-var mayorDeEdad = true;
-var dineroAhorrado = 2000;
-var deudas = 1500;
+let nombre = "Pablo";
+let apellido = "de los Santos";
+let perfil = "pablo-delossantos";
+let edad = 44;
+let email = "pdelossantos@nosis.com";
+let mayorDeEdad = true;
+let dineroAhorrado = 2000;
+let deudas = 1500;
 
 console.log(`Mi nombre completo es ${nombre} ${apellido}`);
 
