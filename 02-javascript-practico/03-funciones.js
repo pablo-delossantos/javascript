@@ -28,3 +28,20 @@ function data(completeName, nickName) {
             "."
     );
 }
+
+// Solucion
+function nombreCompleto(name, lastname) {
+    return name + " " + lastname;
+}
+
+function saludo(name, lastname, username) {
+    const completeName = nombreCompleto(name, lastname);
+
+    console.log(
+        "Mi nombre es " +
+            completeName +
+            ", pero prefiero que me digas " +
+            username +
+            "."
+    );
+}
